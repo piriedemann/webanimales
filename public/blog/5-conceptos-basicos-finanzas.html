@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Conceptos Básicos de Finanzas Personales que Debes Conocer - Mi Sitio Web</title>
-    <meta name="description" content="Aprende los conceptos fundamentales para comenzar tu viaje hacia la libertad financiera.">
+    <title>{{ title }} - Mi Sitio Web</title>
+    <meta name="description" content="{{ description }}">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -21,59 +21,20 @@
     </header>
 
     <main class="content">
-        
+        {% if date %}
         <div class="post-meta">
-            <time datetime="2024-03-23">2024-03-23</time>
-            
+            <time datetime="{{ date }}">{{ date }}</time>
+            {% if tags %}
             <div class="tags">
-                
-                <span class="tag">conceptos básicos</span>
-                
-                <span class="tag">finanzas personales</span>
-                
-                <span class="tag">educación financiera</span>
-                
+                {% for tag in tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
             </div>
-            
+            {% endif %}
         </div>
+        {% endif %}
         
-        
-        <p>Las finanzas personales pueden parecer abrumadoras al principio, pero con estos 5 conceptos básicos podrás comenzar tu viaje hacia la libertad financiera.</p>
-<h2>1. Presupuesto</h2>
-<p>El presupuesto es la base de tus finanzas personales. Es como un plan que te ayuda a:
-- Saber cuánto dinero entra y sale
-- Identificar gastos innecesarios
-- Planificar tus metas financieras
-- Evitar deudas innecesarias</p>
-<h2>2. Ahorro de Emergencia</h2>
-<p>Un fondo de emergencia es tu red de seguridad financiera. Deberías:
-- Ahorrar 3-6 meses de gastos básicos
-- Mantenerlo en una cuenta de fácil acceso
-- No usarlo para gastos no esenciales
-- Reconstruirlo si lo utilizas</p>
-<h2>3. Inversión</h2>
-<p>Invertir es hacer que tu dinero trabaje para ti. Considera:
-- Diversificar tus inversiones
-- Comenzar temprano
-- Mantener una estrategia a largo plazo
-- Reinvertir los dividendos</p>
-<h2>4. Deuda</h2>
-<p>La deuda puede ser buena o mala:
-- <strong>Deuda buena</strong>: Inversiones que generan valor (educación, negocio)
-- <strong>Deuda mala</strong>: Gastos de consumo con tarjetas de crédito</p>
-<h2>5. Interés Compuesto</h2>
-<p>El interés compuesto es el "octavo milagro del mundo":
-- Cuanto antes empieces, mejor
-- Reinvierte tus ganancias
-- Mantén la paciencia
-- Evita retiros tempranos</p>
-<h2>Conclusión</h2>
-<p>Estos conceptos son la base de una vida financiera saludable. Recuerda:
-- Aprender continuamente
-- Practicar la disciplina financiera
-- Buscar asesoramiento profesional cuando sea necesario
-- Mantener tus metas financieras en mente</p>
-<p>¿Te gustaría profundizar en alguno de estos conceptos? ¡Déjanos un comentario!</p>
+        {{ content }}
     </main>
 
     <footer>

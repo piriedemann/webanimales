@@ -1,0 +1,22 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Sitio web estático con Markdown",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "serve": "serve public",
+    "dev": "npm run build && concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.2.0",
+    "marked": "^4.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "serve": "^14.2.1"
+  }
+}
