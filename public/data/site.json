@@ -1,0 +1,17 @@
+{
+    "site": {
+        "name": "Animales Financieros",
+        "description": "Tu podcast de finanzas personales, donde lo complejo se vuelve simple",
+        "url": "https://animalesfinancieros.com",
+        "social": {
+            "youtube": "https://youtube.com/@animalesfinancieros",
+            "spotify": "https://open.spotify.com/show/animalesfinancieros",
+            "apple": "https://podcasts.apple.com/podcast/animalesfinancieros",
+            "google": "https://podcasts.google.com/feed/animalesfinancieros"
+        },
+        "contact": {
+            "email": "hola@animalesfinancieros.com",
+            "newsletter": "https://convertkit.com/animalesfinancieros"
+        }
+    }
+} 

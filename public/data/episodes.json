@@ -1,0 +1,34 @@
+{
+    "episodes": [
+        {
+            "id": "ep-001",
+            "title": "5 Conceptos Básicos de Finanzas Personales",
+            "description": "Aprende los fundamentos para comenzar tu viaje financiero.",
+            "date": "2024-03-23",
+            "duration": "25:30",
+            "thumbnail": "/images/episodes/ep-001.jpg",
+            "audio": {
+                "spotify": "https://open.spotify.com/episode/001",
+                "apple": "https://podcasts.apple.com/episode/001",
+                "google": "https://podcasts.google.com/episode/001"
+            },
+            "youtube": "https://youtube.com/watch?v=001",
+            "tags": ["conceptos básicos", "finanzas personales", "educación financiera"]
+        },
+        {
+            "id": "ep-002",
+            "title": "Cómo Crear tu Primer Presupuesto",
+            "description": "Aprende a crear y mantener un presupuesto efectivo.",
+            "date": "2024-03-30",
+            "duration": "30:15",
+            "thumbnail": "/images/episodes/ep-002.jpg",
+            "audio": {
+                "spotify": "https://open.spotify.com/episode/002",
+                "apple": "https://podcasts.apple.com/episode/002",
+                "google": "https://podcasts.google.com/episode/002"
+            },
+            "youtube": "https://youtube.com/watch?v=002",
+            "tags": ["presupuesto", "ahorro", "planificación financiera"]
+        }
+    ]
+} 
