@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const path = require('path');
-const { marked } = require('marked');
-const frontMatter = require('front-matter');
+const marked = require('marked');
+const matter = require('gray-matter');
 const chokidar = require('chokidar');
 
 // Configuración de marked para usar GitHub Flavored Markdown
@@ -14,16 +14,16 @@ marked.setOptions({
 async function convertMarkdownToHtml(markdownFile, templateFile, outputFile) {
     try {
         // Leer el contenido Markdown
-        const markdownContent = await fs.readFile(markdownFile, 'utf-8');
+        const markdownContent = await fs.promises.readFile(markdownFile, 'utf-8');
         
         // Procesar front-matter
-        const { attributes, body } = frontMatter(markdownContent);
+        const { attributes, body } = matter(markdownContent);
         
         // Convertir Markdown a HTML
         const htmlContent = marked(body);
         
         // Leer la plantilla
-        const template = await fs.readFile(templateFile, 'utf-8');
+        const template = await fs.promises.readFile(templateFile, 'utf-8');
         
         // Reemplazar el contenido en la plantilla
         const finalHtml = template
@@ -33,10 +33,10 @@ async function convertMarkdownToHtml(markdownFile, templateFile, outputFile) {
             .replace('{{content}}', htmlContent);
         
         // Asegurarse de que el directorio de salida existe
-        await fs.ensureDir(path.dirname(outputFile));
+        await fs.promises.ensureDir(path.dirname(outputFile));
         
         // Guardar el HTML final
-        await fs.writeFile(outputFile, finalHtml, 'utf-8');
+        await fs.promises.writeFile(outputFile, finalHtml, 'utf-8');
         
         console.log(`Generado: ${outputFile}`);
     } catch (error) {
@@ -51,13 +51,13 @@ async function processIndexHtml() {
         const outputFile = path.join('public', 'index.html');
         
         // Leer el contenido del index.html
-        const indexContent = await fs.readFile(indexFile, 'utf-8');
+        const indexContent = await fs.promises.readFile(indexFile, 'utf-8');
         
         // Asegurarse de que el directorio public existe
-        await fs.ensureDir('public');
+        await fs.promises.ensureDir('public');
         
         // Copiar el index.html directamente
-        await fs.writeFile(outputFile, indexContent, 'utf-8');
+        await fs.promises.writeFile(outputFile, indexContent, 'utf-8');
         
         console.log('Index.html copiado a public');
     } catch (error) {
@@ -71,10 +71,10 @@ async function buildSite() {
     
     try {
         // Crear directorio public si no existe
-        await fs.ensureDir('public');
+        await fs.promises.ensureDir('public');
         
         // Copiar archivos estáticos
-        await fs.copy('src', 'public', { overwrite: true });
+        copyDir('src', 'public');
         console.log('Archivos estáticos copiados');
         
         // Procesar el index.html
@@ -82,8 +82,8 @@ async function buildSite() {
         
         // Procesar páginas
         const pagesDir = path.join('content', 'pages');
-        if (await fs.pathExists(pagesDir)) {
-            const pages = await fs.readdir(pagesDir);
+        if (await fs.promises.pathExists(pagesDir)) {
+            const pages = await fs.promises.readdir(pagesDir);
             for (const page of pages) {
                 if (page.endsWith('.md')) {
                     const inputFile = path.join(pagesDir, page);
@@ -95,8 +95,8 @@ async function buildSite() {
         
         // Procesar posts del blog
         const blogDir = path.join('content', 'blog');
-        if (await fs.pathExists(blogDir)) {
-            const posts = await fs.readdir(blogDir);
+        if (await fs.promises.pathExists(blogDir)) {
+            const posts = await fs.promises.readdir(blogDir);
             for (const post of posts) {
                 if (post.endsWith('.md')) {
                     const inputFile = path.join(blogDir, post);
@@ -134,4 +134,24 @@ if (process.argv.includes('--watch')) {
     watchFiles();
 } else {
     buildSite();
+}
+
+// Función para copiar directorios recursivamente
+function copyDir(src, dest) {
+    if (!fs.existsSync(dest)) {
+        fs.mkdirSync(dest, { recursive: true });
+    }
+
+    const entries = fs.readdirSync(src, { withFileTypes: true });
+
+    for (let entry of entries) {
+        const srcPath = path.join(src, entry.name);
+        const destPath = path.join(dest, entry.name);
+
+        if (entry.isDirectory()) {
+            copyDir(srcPath, destPath);
+        } else {
+            fs.copyFileSync(srcPath, destPath);
+        }
+    }
 } 

@@ -12,7 +12,8 @@
   "dependencies": {
     "chokidar": "^3.5.3",
     "front-matter": "^4.0.2",
-    "fs-extra": "^11.2.0",
+    "fs-extra": "^11.3.0",
+    "gray-matter": "^4.0.3",
     "marked": "^4.3.0"
   },
   "devDependencies": {
