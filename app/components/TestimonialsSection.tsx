@@ -58,7 +58,7 @@ export default function TestimonialsSection() {
               <div className="flex flex-col h-full">
                 <div className="flex-grow">
                   <p className="text-lg mb-6 italic text-gray-600">
-                    "{testimonial.text}"
+                    &quot;{testimonial.text}&quot;
                   </p>
                 </div>
                 <p className="text-lg font-medium text-[#FAAD0D]">
