@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import HeroCurso from '../components/HeroCurso';
 
 export default function Cursos() {
   return (
