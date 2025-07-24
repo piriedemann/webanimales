@@ -21,6 +21,9 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/wpg3grk.css" />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="shortcut icon" type="image/png" href="/images/logo.png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body className="bg-white">
         <Header />
