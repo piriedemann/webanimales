@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from './components/Header';
 
 export const metadata: Metadata = {
   title: "Animales Financieros",
@@ -21,7 +22,10 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/wpg3grk.css" />
       </head>
-      <body className="bg-white">{children}</body>
+      <body className="bg-white">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
