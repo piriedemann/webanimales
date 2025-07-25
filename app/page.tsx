@@ -5,14 +5,13 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative py-24 bg-[#1C1C1C] text-white overflow-hidden font-['roc-grotesk']">
+      <section className="relative py-12 sm:py-24 bg-[#1C1C1C] text-white overflow-hidden font-['roc-grotesk']">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-8">
             <Image src="/images/logo-caras.png" alt="Caras comunidad" width={180} height={180} className="rounded-2xl border-4 border-white shadow-lg" />
           </div>
-          <h1 className="text-5xl sm:text-[64px] font-bold mb-6 leading-[1.1]">
-            Tranquilidad Financiera,<br className="hidden sm:inline" />
-            <span className="text-[#FDB813]">Crecimiento Exponencial</span>
+          <h1 className="text-xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight sm:leading-[1.1] text-center">
+            Tranquilidad Financiera, <span className="text-[#FDB813]">Crecimiento Exponencial</span>
           </h1>
           <p className="text-xl mb-10 text-white/80">
             Te acompañamos a que te ordenes con tus finanzas y liberes tiempo para que te dediques a crecer
@@ -21,7 +20,7 @@ export default function Home() {
       </section>
 
       {/* Podcast */}
-      <section className="pt-12 pb-24 bg-[#1C1C1C] text-white font-['roc-grotesk']">
+      <section className="pt-8 sm:pt-12 pb-12 sm:pb-24 bg-[#1C1C1C] text-white font-['roc-grotesk']">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center mb-6 gap-4">
             <h2 className="text-4xl font-bold mb-0">Escúchanos en Spotify</h2>
