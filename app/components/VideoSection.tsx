@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import ShopifyButtonWrapper from './ShopifyButtonWrapper';
 
 const features = [
   { text: '15 Clases Grabadas' },
@@ -57,16 +58,9 @@ export default function VideoSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-12 text-center"
+          className="mt-12 flex justify-center"
         >
-          <a
-            href="https://pay.hotmart.com/N94252329I?off=zvp3xk3v&checkoutMode=10&bid=1745339142690"
-            className="inline-block bg-[#1C1C1C] text-white px-12 py-4 rounded-md text-xl font-['roc-grotesk'] hover:bg-black/80 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Inscribirme al curso
-          </a>
+          <ShopifyButtonWrapper />
         </motion.div>
       </div>
     </section>

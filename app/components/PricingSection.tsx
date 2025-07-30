@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import ShopifyButtonWrapper from './ShopifyButtonWrapper';
 
 export default function PricingSection() {
   return (
@@ -26,12 +26,7 @@ export default function PricingSection() {
                 Es un producto que creamos para nuestro yo del pasado. Nos habríamos ahorrado tiempo, incertidumbre y varios errores.
               </p>
             </div>
-            <Link
-              href="#inscribirse"
-              className="inline-block px-8 py-4 bg-[#FAAD0D] text-black rounded-full text-lg font-medium hover:bg-[#FBC252] transition-colors"
-            >
-              Inscribirme al Curso
-            </Link>
+            <ShopifyButtonWrapper />
           </motion.div>
 
           {/* Garantía */}

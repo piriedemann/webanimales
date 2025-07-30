@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import ShopifyButtonWrapper from './ShopifyButtonWrapper';
 
 export default function HeroCurso() {
   return (
@@ -34,14 +35,7 @@ export default function HeroCurso() {
           </p>
           {/* Botón de inscripción */}
           <div className="flex justify-center mb-8">
-            <a
-              href="https://pay.hotmart.com/N94252329I?off=zvp3xk3v&checkoutMode=10&bid=1745339142690"
-              className="inline-block bg-white text-black px-12 py-4 rounded-md text-lg font-medium hover:bg-gray-100 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Inscribirme al curso
-            </a>
+            <ShopifyButtonWrapper />
           </div>
           {/* Texto adicional */}
           <p className="text-gray-400 text-lg text-center">
