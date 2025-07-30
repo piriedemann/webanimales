@@ -38,7 +38,7 @@ export default function ShopifyButtonWrapper() {
           storefrontAccessToken: 'abd5a5f04d1ea626d8ad6871b78b3e61',
         });
         
-        window.ShopifyBuy.UI.onReady(client).then(function (ui: any) {
+        window.ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
             id: '10078104977540',
             node: buttonRef.current,
@@ -184,8 +184,28 @@ export default function ShopifyButtonWrapper() {
 }
 
 // Declaración de tipos para TypeScript
+interface ShopifyConfig {
+  domain: string;
+  storefrontAccessToken: string;
+}
+
+interface ShopifyUI {
+  createComponent: (type: string, config: Record<string, unknown>) => void;
+}
+
+interface ShopifyClient {
+  buildClient: (config: ShopifyConfig) => ShopifyClient;
+}
+
+interface ShopifyBuy {
+  buildClient: (config: ShopifyConfig) => ShopifyClient;
+  UI: {
+    onReady: (client: ShopifyClient) => Promise<ShopifyUI>;
+  };
+}
+
 declare global {
   interface Window {
-    ShopifyBuy: any;
+    ShopifyBuy: ShopifyBuy;
   }
 } 
