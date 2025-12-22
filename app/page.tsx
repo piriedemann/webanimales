@@ -8,7 +8,7 @@ export default function Home() {
       <section className="relative py-12 sm:py-24 bg-[#1C1C1C] text-white overflow-hidden font-['roc-grotesk']">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-8">
-            <Image src="/images/logo-caras.png" alt="Caras comunidad" width={180} height={180} className="rounded-2xl border-4 border-white shadow-lg" />
+            <Image src="/images/logo-caras.png" alt="Caras comunidad" width={180} height={180} className="rounded-2xl border-4 border-white shadow-lg" priority />
           </div>
           <h1 className="text-xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight sm:leading-[1.1] text-center">
             Tranquilidad Financiera, <span className="text-[#FDB813]">Crecimiento Exponencial</span>
@@ -29,15 +29,15 @@ export default function Home() {
           <p className="text-lg mb-10 text-white/80">Descubre los mejores consejos y conversaciones sobre finanzas personales. Estos son nuestros 3 capítulos más escuchados:</p>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
             <div className="flex-1 bg-[#23272F] rounded-2xl p-6 flex flex-col items-center">
-              <iframe style={{borderRadius:12}} src="https://open.spotify.com/embed/episode/45yCTTXHDD5rCRRac8DrAq?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{borderRadius:12}} src="https://open.spotify.com/embed/episode/45yCTTXHDD5rCRRac8DrAq?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <Link href="https://open.spotify.com/episode/45yCTTXHDD5rCRRac8DrAq?si=49e718f9e9604e76" target="_blank" className="mt-4 text-[#FDB813] font-bold">70 - Las Reglas del Juego del Dinero</Link>
             </div>
             <div className="flex-1 bg-[#23272F] rounded-2xl p-6 flex flex-col items-center">
-              <iframe style={{borderRadius:12}} src="https://open.spotify.com/embed/episode/4ORCxsI8C3VF8O5GrwxLZC?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{borderRadius:12}} src="https://open.spotify.com/embed/episode/4ORCxsI8C3VF8O5GrwxLZC?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <Link href="https://open.spotify.com/episode/4ORCxsI8C3VF8O5GrwxLZC?si=108047850b03493d" target="_blank" className="mt-4 text-[#FDB813] font-bold">77 - Mentores: La visión con Patricio Jottar</Link>
             </div>
             <div className="flex-1 bg-[#23272F] rounded-2xl p-6 flex flex-col items-center">
-              <iframe style={{borderRadius:12}} src="https://open.spotify.com/embed/episode/2aEp7BKPvqF6P6Cvf38MSe?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{borderRadius:12}} src="https://open.spotify.com/embed/episode/2aEp7BKPvqF6P6Cvf38MSe?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <Link href="https://open.spotify.com/episode/2aEp7BKPvqF6P6Cvf38MSe?si=3a7b9ccbf2de4abb" target="_blank" className="mt-4 text-[#FDB813] font-bold">92 - Cómo invertir en tus 20s, 30s, 40s, 50s y 60s</Link>
             </div>
           </div>
@@ -53,9 +53,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-6 text-[#1C1C1C]">Nuestro canal de Youtube</h2>
           <p className="text-lg mb-10 text-gray-700">Videos, entrevistas y contenido exclusivo para la comunidad.</p>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/A33l-2kka8s" title="Video destacado" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-xl mx-auto" style={{minWidth:340, minHeight:191, maxWidth:340, maxHeight:191}}></iframe>
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/7gJu6RbdfxQ" title="Video destacado" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-xl mx-auto" style={{minWidth:340, minHeight:191, maxWidth:340, maxHeight:191}}></iframe>
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/krrae50uFlw" title="Video destacado" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-xl mx-auto" style={{minWidth:340, minHeight:191, maxWidth:340, maxHeight:191}}></iframe>
+            <iframe width="340" height="191" src="https://www.youtube.com/embed/A33l-2kka8s" title="Video destacado" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-xl mx-auto" style={{minWidth:340, minHeight:191, maxWidth:340, maxHeight:191}} loading="lazy"></iframe>
+            <iframe width="340" height="191" src="https://www.youtube.com/embed/7gJu6RbdfxQ" title="Video destacado" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-xl mx-auto" style={{minWidth:340, minHeight:191, maxWidth:340, maxHeight:191}} loading="lazy"></iframe>
+            <iframe width="340" height="191" src="https://www.youtube.com/embed/krrae50uFlw" title="Video destacado" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-xl mx-auto" style={{minWidth:340, minHeight:191, maxWidth:340, maxHeight:191}} loading="lazy"></iframe>
           </div>
           <div className="mt-8">
             <Link href="https://www.youtube.com/@animalesfinancieros" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FDB813] text-black px-8 py-4 rounded-md text-lg font-medium hover:bg-[#FFD966] transition-colors">Ver canal</Link>

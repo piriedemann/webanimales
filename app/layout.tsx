@@ -20,6 +20,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <link rel="preconnect" href="https://use.typekit.net" />
+        <link rel="dns-prefetch" href="https://use.typekit.net" />
         <link rel="stylesheet" href="https://use.typekit.net/wpg3grk.css" />
         <link rel="icon" href="/favicon.ico" />
       </head>
