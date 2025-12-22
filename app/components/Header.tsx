@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex gap-6">
           <Link href="/" className="text-lg text-white hover:text-[#FDB813] transition-colors">Home</Link>
           <Link href="/cursos" className="text-lg text-white hover:text-[#FDB813] transition-colors">Cursos</Link>
-          <Link href="/impulso" className="text-lg text-white hover:text-[#FDB813] transition-colors">Impulso</Link>
+          <Link href="/impulso" className="text-lg text-white hover:text-[#FDB813] transition-colors">Manada 10%</Link>
           <Link href="/contacto" className="text-lg text-white hover:text-[#FDB813] transition-colors">Contacto</Link>
         </div>
       </nav>
