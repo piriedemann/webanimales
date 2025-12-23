@@ -9,7 +9,29 @@ export const metadata: Metadata = {
     icon: '/images/logo.png',
     shortcut: '/images/logo.png',
     apple: '/images/logo.png',
-  }
+  },
+  openGraph: {
+    title: "Animales Financieros",
+    description: "Aprende a ordenar tus finanzas y prepara tu futuro financiero.",
+    url: "https://animalesfinancieros.com",
+    siteName: "Animales Financieros",
+    images: [
+      {
+        url: '/images/logo-caras.png',
+        width: 1200,
+        height: 630,
+        alt: 'Animales Financieros',
+      },
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Animales Financieros",
+    description: "Aprende a ordenar tus finanzas y prepara tu futuro financiero.",
+    images: ['/images/logo-caras.png'],
+  },
 };
 
 export default function RootLayout({

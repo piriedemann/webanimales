@@ -20,11 +20,12 @@ export default function Impulso() {
             <div className="relative">
               <Image 
                 src="/images/Hero-percentil.png" 
-                alt="10% Hero" 
+                alt="Manada 10% Hero" 
                 width={600} 
                 height={400} 
                 className="rounded-2xl shadow-lg"
                 priority
+                key="hero-percentil"
               />
             </div>
           </div>
@@ -225,7 +226,7 @@ export default function Impulso() {
             <div className="bg-[#23272F] text-white rounded-2xl p-8 sm:p-12">
               <h3 className="text-3xl font-bold mb-4 text-[#FDB813]">Mes 2 → MENTE</h3>
               <p className="text-xl mb-6">
-                En vez de trabajar revisando el correo y respondiendo mensajes, trabaja en sesiones de trabajo profundo y sé el mejor de la oficina
+                En vez de trabajar revisando el correo y respondiendo mensajes, trabaja en sesiones de trabajo profundo y sé el mejor de la oficina.
               </p>
               <ul className="space-y-3 text-lg">
                 <li className="flex items-start gap-3">
@@ -303,7 +304,7 @@ export default function Impulso() {
             <div className="bg-[#2C2C2C] rounded-2xl p-8">
               <h3 className="text-2xl font-bold mb-4 text-[#FDB813]">CHARLAS CON EXPERTOS</h3>
               <p className="text-lg mb-4">
-                Gente que dedica su vida a los temas que veremos
+                Gente que dedica su vida a los temas que veremos:
               </p>
               <ul className="space-y-2 text-lg">
                 <li>• Nutrición y deporte</li>
@@ -332,11 +333,11 @@ export default function Impulso() {
         </div>
       </section>
 
-      {/* Quienes Somos */}
+      {/* Quiénes Somos */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center text-[#1C1C1C]">
-            Quienes Somos
+            Quiénes Somos
           </h2>
           <div className="flex justify-center mb-8">
             <Image 
@@ -607,7 +608,7 @@ export default function Impulso() {
             <div>
               <h3 className="text-xl font-bold mb-3 text-[#1C1C1C]">¿Cuánto tiempo necesito invertir?</h3>
               <p className="text-lg text-gray-700">
-                Un par de horas para entender qué estamos haciendo, y dependiendo del hábito que elijas pueden ser un par de minutos (tomar más agua), o una hora al día (salir a caminar), por ejemplo
+                Un par de horas para entender qué estamos haciendo, y dependiendo del hábito que elijas pueden ser un par de minutos (tomar más agua), o una hora al día (salir a caminar), por ejemplo.
               </p>
             </div>
 
