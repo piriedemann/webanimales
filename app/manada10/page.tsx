@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Impulso() {
   return (
@@ -58,9 +59,9 @@ export default function Impulso() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+              <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
                 Quiero participar
-              </button>
+              </Link>
               <p className="text-[#FDB813] font-semibold">Quedan 20 cupos</p>
             </div>
           </div>
@@ -180,9 +181,9 @@ export default function Impulso() {
                 Estos logros en un momento fueron objetivos. Estábamos en mala forma física, desconcentrados y a la deriva. El primer paso fue pasar del promedio al 10% mejor. <span className="font-bold">Súmate.</span>
               </p>
               <div className="mt-6">
-                <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+                <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
                   Quiero Participar
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -326,9 +327,9 @@ export default function Impulso() {
           </div>
 
           <div className="text-center">
-            <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+            <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero Participar
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -498,9 +499,9 @@ export default function Impulso() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+            <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero Participar
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -523,9 +524,9 @@ export default function Impulso() {
               Si después de 2 semanas no sientes que esto es diferente a todo
               lo que has intentado antes, te devolvemos el 100% sin preguntas.
             </p>
-            <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+            <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero Participar
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -538,7 +539,7 @@ export default function Impulso() {
           </h2>
           <div className="bg-[#1C1C1C] text-white rounded-2xl p-8 sm:p-12">
             <p className="text-3xl font-bold mb-8 text-[#FDB813]">
-              $100 USD/mes por 3 meses ($300 USD total)
+              $200 USD/mes por 3 meses ($600 USD total)
             </p>
             <ul className="space-y-4 text-lg mb-8 text-left max-w-2xl mx-auto">
               <li className="flex items-start gap-3">
@@ -565,9 +566,9 @@ export default function Impulso() {
             <p className="text-xl text-white/90 mb-8">
               Pero lo que de verdad estás pagando, es un cambio de hábitos que va a ser un círculo virtuoso para que cambies distintas áreas de tu vida. Lo hemos visto (y lo vivimos nosotros).
             </p>
-            <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+            <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero Participar
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -590,9 +591,9 @@ export default function Impulso() {
             </p>
           </div>
           <div className="mt-12">
-            <button className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors">
+            <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero Participar
-            </button>
+            </Link>
           </div>
         </div>
       </section>
