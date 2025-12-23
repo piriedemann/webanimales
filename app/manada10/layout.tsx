@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     siteName: "Animales Financieros",
     images: [
       {
-        url: '/images/manada10.png',
+        url: 'https://animalesfinancieros.com/images/manada10.png',
         width: 1200,
         height: 630,
         alt: 'Manada 10%',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Manada 10% - Animales Financieros",
     description: "Súmate a la manada",
-    images: ['/images/manada10.png'],
+    images: ['https://animalesfinancieros.com/images/manada10.png'],
   },
 };
 

@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from './components/Header';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://animalesfinancieros.com'),
   title: "Animales Financieros",
   description: "Aprende a ordenar tus finanzas y prepara tu futuro financiero.",
   icons: {
