@@ -62,7 +62,7 @@ export default function Impulso() {
               <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
                 Quiero participar
               </Link>
-              <p className="text-[#FDB813] font-semibold">Quedan 16 cupos</p>
+              <p className="text-[#FDB813] font-semibold">Quedan <span className="line-through">20</span> 16 cupos</p>
             </div>
           </div>
         </div>
@@ -590,10 +590,11 @@ export default function Impulso() {
               Esperamos verte adentro animal.
             </p>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 flex flex-col items-center gap-4">
             <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero Participar
             </Link>
+            <p className="text-[#FDB813] font-semibold">Quedan <span className="line-through">20</span> 16 cupos</p>
           </div>
         </div>
       </section>
