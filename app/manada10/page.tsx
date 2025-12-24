@@ -62,7 +62,7 @@ export default function Impulso() {
               <Link href="https://dvacapital.typeform.com/manada10" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
                 Quiero participar
               </Link>
-              <p className="text-[#FDB813] font-semibold">Quedan 20 cupos</p>
+              <p className="text-[#FDB813] font-semibold">Quedan 16 cupos</p>
             </div>
           </div>
         </div>
