@@ -60,7 +60,7 @@ export default function Impulso() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
               <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-                Quiero participar
+                Avísenme al siguiente
               </Link>
               <p className="text-[#FDB813] font-semibold">No quedan cupos</p>
             </div>
@@ -182,7 +182,7 @@ export default function Impulso() {
               </p>
               <div className="mt-6">
                 <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-                  Quiero Participar
+                  Avísenme al siguiente
                 </Link>
               </div>
             </div>
@@ -328,7 +328,7 @@ export default function Impulso() {
 
           <div className="text-center">
             <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-              Quiero Participar
+              Avísenme al siguiente
             </Link>
           </div>
         </div>
@@ -500,7 +500,7 @@ export default function Impulso() {
 
           <div className="text-center mt-12">
             <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-              Quiero Participar
+              Avísenme al siguiente
             </Link>
           </div>
         </div>
@@ -525,7 +525,7 @@ export default function Impulso() {
               lo que has intentado antes, te devolvemos el 100% sin preguntas.
             </p>
             <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-              Quiero Participar
+              Avísenme al siguiente
             </Link>
           </div>
         </div>
@@ -567,7 +567,7 @@ export default function Impulso() {
               Pero lo que de verdad estás pagando, es un cambio de hábitos que va a ser un círculo virtuoso para que cambies distintas áreas de tu vida. Lo hemos visto (y lo vivimos nosotros).
             </p>
             <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-              Quiero Participar
+              Avísenme al siguiente
             </Link>
           </div>
         </div>
@@ -592,7 +592,7 @@ export default function Impulso() {
           </div>
           <div className="mt-12 flex flex-col items-center gap-4">
             <Link href="https://dvacapital.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
-              Quiero Participar
+              Avísenme al siguiente
             </Link>
             <p className="text-[#FDB813] font-semibold">No quedan cupos</p>
           </div>
