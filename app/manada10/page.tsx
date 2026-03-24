@@ -539,7 +539,7 @@ export default function Impulso() {
           </h2>
           <div className="bg-[#1C1C1C] text-white rounded-2xl p-8 sm:p-12">
             <p className="text-3xl font-bold mb-8 text-[#FDB813]">
-              $200 USD/mes por 3 meses ($600 USD total)
+              $100.000 al mes por 3 meses ($300.000 total)
             </p>
             <ul className="space-y-4 text-lg mb-8 text-left max-w-2xl mx-auto">
               <li className="flex items-start gap-3">
