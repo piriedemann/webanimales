@@ -62,7 +62,9 @@ export default function Impulso() {
               <Link href="https://nautapro.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
                 Quiero participar
               </Link>
-              <p className="text-[#FDB813] font-semibold">Son 20 cupos</p>
+              <p className="text-[#FDB813] font-semibold">
+                <span className="line-through opacity-70">20 cupos</span> · Quedan 6
+              </p>
             </div>
           </div>
         </div>
@@ -594,7 +596,9 @@ export default function Impulso() {
             <Link href="https://nautapro.typeform.com/to/uB4kPbb1" target="_blank" rel="noopener noreferrer" className="bg-[#FDB813] text-black font-bold py-4 px-8 rounded-md text-lg hover:bg-[#FFD966] transition-colors inline-block text-center">
               Quiero participar
             </Link>
-            <p className="text-[#FDB813] font-semibold">Son 20 cupos</p>
+            <p className="text-[#FDB813] font-semibold">
+              <span className="line-through opacity-70">20 cupos</span> · Quedan 6
+            </p>
           </div>
         </div>
       </section>
