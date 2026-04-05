@@ -63,7 +63,7 @@ export default function Impulso() {
                 Quiero participar
               </Link>
               <p className="text-[#FDB813] font-semibold">
-                <span className="line-through opacity-70">20 cupos</span> · Quedan 6
+                <span className="line-through opacity-70">20 cupos</span> · Quedan 3
               </p>
             </div>
           </div>
@@ -597,7 +597,7 @@ export default function Impulso() {
               Quiero participar
             </Link>
             <p className="text-[#FDB813] font-semibold">
-              <span className="line-through opacity-70">20 cupos</span> · Quedan 6
+              <span className="line-through opacity-70">20 cupos</span> · Quedan 3
             </p>
           </div>
         </div>
